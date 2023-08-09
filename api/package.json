@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "concurrently": "^8.2.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "date-fns": "^2.30.0",
@@ -13,14 +14,10 @@
   "name": "api",
   "version": "1.0.0",
   "description": "this is the backend",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "./api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node index.js",
-    "server" : "nodemon index.js",
-    "client" : "npm start --prefix ./client",
-    "dev" : "concurrently \"npm start\" \"npm run client\""
+    "start": "cd ./api && node index.js"
   },
   "author": "Shrey Pandey",
   "license": "ISC"
