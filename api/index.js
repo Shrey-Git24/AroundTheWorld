@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 const multer = require('multer');
 const uploadMiddleware = multer({ dest: 'uploads/' });
 const fs = require('fs');
-const path = require("path");
+//const path = require("path");
 
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asdfe45we45w345wegw345werjktjwertkj';
@@ -27,11 +27,11 @@ multer({
   limits: { fieldSize: 25 * 1024 * 1024 }
 });
 
-// to access static files
+/* to access static files
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.get("*", function(req,res){
   res.sendFile(path.join(__dirname, "./client/build/index.html"))
-});
+});*/
 
 app.post('/signup', async (req,res) => {
   const {firstName, lastName, email, userName,password} = req.body;

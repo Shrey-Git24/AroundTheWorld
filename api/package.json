@@ -14,10 +14,9 @@
   "name": "api",
   "version": "1.0.0",
   "description": "this is the backend",
-  "main": "./api/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd ./api && node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shrey Pandey",
   "license": "ISC"
